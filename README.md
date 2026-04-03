@@ -40,3 +40,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - **Componente Header:** Implementado com Flexbox para distribuir Logotipo, Barra de Pesquisa (Mockup) e Menu Principal.
 - **Roteamento:** Utiliza o componente `<Link>` do Next.js para Client-Side Routing, garantindo alta performance sem recarregar a página.
 - **Responsividade Inicial:** Elementos não essenciais (como a barra de pesquisa completa) são ocultados em dispositivos móveis para preservar a usabilidade.
+
+### 🦸 Hero Section
+
+- **Layout Dinâmico:** Implementado utilizando CSS Grid para criar uma divisão visual clara entre o conteúdo textual (esquerda) e os elementos gráficos (direita), adaptando-se para coluna única em dispositivos móveis.
+- **Tipografia:** Uso da paleta de cores para destacar palavras-chave no `h1`, guiando a leitura do usuário.
+- **Microinterações:** Botão de Call-to-Action (CTA) com efeitos de sombra difusa e translação no eixo Y para feedback tátil (hover states).
