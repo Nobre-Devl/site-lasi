@@ -1,5 +1,5 @@
-// app/page.tsx
 import Link from "next/link";
+import { EventCard } from "../components/home/event-card";
 
 export default function Home() {
   return (
@@ -23,16 +23,13 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* --- Coluna da Direita: Composição Visual (Nova!) --- */}
         {/* O container pai precisa ser 'relative' para prender os elementos absolutos dentro dele */}
         <div className="relative mx-auto flex h-[400px] w-full max-w-[550px] items-center justify-center lg:h-[500px]">
           
-          {/* Efeitos de Luz no Fundo (Glow) */}
           <div className="absolute right-0 top-10 h-64 w-64 rounded-full bg-purple-600/20 blur-[80px]"></div>
           <div className="absolute bottom-10 left-0 h-64 w-64 rounded-full bg-purple-600/20 blur-[80px]"></div>
 
           {/* Número "2" Gigante (Fundo) */}
-          {/* Usamos classes arbitrárias do Tailwind [-webkit-text-stroke:...] para criar o contorno vazado */}
           <span className="absolute -left-2 top-16 z-10 text-[160px] font-black leading-none text-transparent [-webkit-text-stroke:3px_#9333ea] lg:-left-10 lg:text-[200px]">
             2
           </span>
@@ -57,12 +54,30 @@ export default function Home() {
             />
           </div>
 
-          {/* Número "4" Gigante (Frente) */}
+          {/* Número "6" Gigante (Frente) */}
           <span className="absolute -right-2 bottom-16 z-40 text-[160px] font-black leading-none text-transparent [-webkit-text-stroke:3px_#9333ea] lg:-right-6 lg:text-[200px]">
             6
           </span>
 
         </div>
+      </section>
+      <section className="mt-32 grid grid-cols-1 gap-12 lg:grid-cols-2">
+        
+        {/* Esquerda: O Card do Evento que acabamos de criar */}
+        <div className="flex flex-col justify-center">
+          <EventCard />
+        </div>
+
+        {/* Direita: Placeholder para a Vitrine da Loja (Fase 6) */}
+        <div className="flex flex-col gap-4">
+          <h3 className="text-2xl font-bold text-zinc-900">Vitrine da Loja</h3>
+          <div className="flex h-full min-h-[250px] w-full items-center justify-center rounded-2xl border-2 border-dashed border-zinc-200 bg-zinc-50/50">
+            <p className="text-sm font-medium text-zinc-400">
+              Espaço reservado para as camisetas e moletons (Fase 6)
+            </p>
+          </div>
+        </div>
+
       </section>
     </div>
   );

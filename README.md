@@ -46,3 +46,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - **Layout Dinâmico:** Implementado utilizando CSS Grid para criar uma divisão visual clara entre o conteúdo textual (esquerda) e os elementos gráficos (direita), adaptando-se para coluna única em dispositivos móveis.
 - **Tipografia:** Uso da paleta de cores para destacar palavras-chave no `h1`, guiando a leitura do usuário.
 - **Microinterações:** Botão de Call-to-Action (CTA) com efeitos de sombra difusa e translação no eixo Y para feedback tátil (hover states).
+
+### 🎨 Composição e Efeitos Visuais
+
+- **Overlap Layout:** Utilização de posicionamento `absolute` restrito a um container `relative` para criar a composição em formato de "mosaico" no Hero Section.
+- **Camadas (Z-Index):** Controle estrito de profundidade para sobrepor elementos de design (números tipográficos, fotografias e efeitos de luz).
+- **Tipografia Vazada:** Implementação de contorno em textos utilizando classes arbitrárias do Tailwind (`-webkit-text-stroke`) com preenchimento transparente.
+- **Glass/Glow Effects:** Uso de camadas com opacidade reduzida combinadas com filtros de desfoque (`blur`) para gerar iluminação difusa de fundo.
+
+## 🧱 Padrões de Código e Arquitetura
+
+- **Componentização:** A página principal (`page.tsx`) atua apenas como uma "orquestradora" de layout. Componentes com escopo específico (como cards de eventos ou vitrines) são isolados na pasta `components/home/` para facilitar a manutenção e escalabilidade.
+- **Design de Cards:** Utilização de `shadow-xl` combinada com fundos translúcidos e gradientes sutis em posições absolutas (`blur-40px`) para dar profundidade e destaque às informações importantes.
+
