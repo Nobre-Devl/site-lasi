@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### 🧭 Navegação
+
+- **Componente Header:** Implementado com Flexbox para distribuir Logotipo, Barra de Pesquisa (Mockup) e Menu Principal.
+- **Roteamento:** Utiliza o componente `<Link>` do Next.js para Client-Side Routing, garantindo alta performance sem recarregar a página.
+- **Responsividade Inicial:** Elementos não essenciais (como a barra de pesquisa completa) são ocultados em dispositivos móveis para preservar a usabilidade.
