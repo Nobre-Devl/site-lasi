@@ -59,3 +59,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - **Componentização:** A página principal (`page.tsx`) atua apenas como uma "orquestradora" de layout. Componentes com escopo específico (como cards de eventos ou vitrines) são isolados na pasta `components/home/` para facilitar a manutenção e escalabilidade.
 - **Design de Cards:** Utilização de `shadow-xl` combinada com fundos translúcidos e gradientes sutis em posições absolutas (`blur-40px`) para dar profundidade e destaque às informações importantes.
 
+### 🛍️ Renderização Dinâmica e Interatividade
+
+- **Data Mapping:** Componentes que exibem coleções de dados (como a `ShopShowcase`) utilizam a função `.map()` do JavaScript para renderizar elementos dinamicamente, seguindo o princípio DRY (Don't Repeat Yourself).
+- **Group Hovering:** Uso de seletores parentais do Tailwind (`group` e `group-hover`) para orquestrar animações simultâneas em múltiplos elementos de um card (ex: alterar a cor de fundo do placeholder e do ícone ao passar o mouse no card inteiro).
+
