@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { EventCard } from "../components/home/event-card";
+import { ShopShowcase } from "../components/home/shop-showcase";
 
 export default function Home() {
   return (
@@ -60,22 +61,20 @@ export default function Home() {
           </span>
 
         </div>
+
+
       </section>
+
       <section className="mt-32 grid grid-cols-1 gap-12 lg:grid-cols-2">
         
-        {/* Esquerda: O Card do Evento que acabamos de criar */}
+        {/* Esquerda: Evento */}
         <div className="flex flex-col justify-center">
           <EventCard />
         </div>
 
-        {/* Direita: Placeholder para a Vitrine da Loja (Fase 6) */}
-        <div className="flex flex-col gap-4">
-          <h3 className="text-2xl font-bold text-zinc-900">Vitrine da Loja</h3>
-          <div className="flex h-full min-h-[250px] w-full items-center justify-center rounded-2xl border-2 border-dashed border-zinc-200 bg-zinc-50/50">
-            <p className="text-sm font-medium text-zinc-400">
-              Espaço reservado para as camisetas e moletons (Fase 6)
-            </p>
-          </div>
+        {/* Direita: A nossa nova Vitrine da Loja! */}
+        <div className="flex w-full items-center justify-center">
+          <ShopShowcase />
         </div>
 
       </section>
